@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Kamu<3</title>
+</head>
+<body style="text-align: center;">
+    <h1>Hai Cantik!</h1>
+    <img src="https://media.tenor.com/KHUhRSyp03EAAAAC/miss-you.gif" />
+    <h1>Apakah Kamu Happy Hari Ini?</h1>
+    <button id="btn_mau" onclick="alert('Senyum Terus  Biar Cantik')">Senang</button>&nbsp;
+    <button id="btn_gamau" onclick="gak(this)" style="position: absolute">
+      Gak
+    </button>
+  </body>
+  <script>
+    function gak(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</body>
+</html>
